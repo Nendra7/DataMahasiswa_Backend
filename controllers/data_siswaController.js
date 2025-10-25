@@ -45,6 +45,7 @@ module.exports = {
             if (nama_siswa !== undefined) fields.push('nama_siswa = ?'), values.push(nama_siswa);
             if (alamat_siswa !== undefined) fields.push('alamat_siswa = ?'), values.push(alamat_siswa);
             if (tgl_siswa !== undefined) fields.push('tgl_siswa = ?'), values.push(tgl_siswa);
+            if (jurusan_siswa !== undefined) fields.push('jurusan_siswa = ?'), values.push(jurusan_siswa)
             if (fields.length === 0) return res.status(400).json({ message: 'Tidak ada data untuk diupdate' });
 
             values.push(kode_siswa); //untuk WHERE kode_siswa = ?
