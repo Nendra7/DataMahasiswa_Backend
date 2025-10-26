@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 
-const pelangganController = require('../controllers/data_siswaController');
 const data_siswaController = require('../controllers/data_siswaController');
 
 //routes
